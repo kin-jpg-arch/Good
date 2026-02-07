@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웹훅 센더</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>디스코드 웹훅 센더</h2>
+
+  <!-- 공통 -->
+  <input id="url" placeholder="웹훅 URL">
+
+  <!-- 프로필 -->
+  <input id="username" placeholder="보낼 이름">
+  <input id="avatar" placeholder="아이콘 URL">
+
+  <!-- 메시지 -->
+  <textarea id="content" placeholder="메시지"></textarea>
+
+  <!-- 임베드 -->
+  <h3>임베드</h3>
+  <input id="embedTitle" placeholder="제목">
+  <textarea id="embedDesc" placeholder="내용"></textarea>
+  <input id="embedColor" placeholder="색상 HEX (ff0000)">
+
+  <!-- 파일 -->
+  <h3>파일 업로드</h3>
+  <input type="file" id="file">
+
+  <button onclick="sendWebhook()">전송</button>
+
+  <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
